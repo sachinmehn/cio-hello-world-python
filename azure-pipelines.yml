@@ -1,0 +1,11 @@
+trigger:
+- none  # Manually trigger the pipeline
+
+pool:
+  vmImage: ubuntu-latest  # Update with your preferred agent OS
+
+steps:
+- task: PythonScript@0
+  inputs:
+    scriptPath: 'hello_world.py'  # Path to your script
+    arguments: ''  # Optional arguments for the script
